@@ -1,27 +1,21 @@
 # SuperPeachSisters
 In Super Peach Sisters, Peach starts out a new game with three lives and continues to play
 until all of her lives have been exhausted. There are multiple levels in Super Peach
-Sisters, beginning with level 1 (NOT zero), and during each level except for the last
+Sisters, beginning with level 1, and during each level except for the last
 Peach must reach a flag to continue to the next level. On the last level, Peach must reach
-(and thus save) Mario in order to win the entire game (there is no flag on the last level).
+(and thus save) Mario in order to win the entire game.
 
 The Super Peach Sisters screen is exactly 256 pixels wide by 256 pixels high. The
 bottom-leftmost pixel has coordinates x=0,y=0, while the upper-rightmost pixel has
 coordinate x=255,y=255, where x increases to the right and y increases upward toward
-the top of the screen. The GameConstants.h file we provide defines constants that
-represent the game’s width and height (VIEW_WIDTH and VIEW_HEIGHT), which
-you must use in your code instead of hard-coding the integers. Every object in the game
-(e.g., Peach, koopas, stars, shells, etc.) will have an x coordinate in the range 0 to
-VIEW_WIDTH−1 inclusive, and a y coordinate in the range 0 to VIEW_HEIGHT−1
-inclusive. These constants also may be found in the same header file.
+the top of the screen. Every object in the game (e.g., Peach, koopas, stars, shells, etc.)
+will have an x coordinate in the range 0 to VIEW_WIDTH−1 inclusive, and a y coordinate
+in the range 0 to VIEW_HEIGHT−1 inclusive.
 
-Each level has its layout defined in a data file, such as level01.txt or level02.txt. You can
-find example level files in the Assets folder that we provide, and you may modify these
-data files or add additional ones to create new and exciting levels. In every level except
-for the last level, there must be at least one flag that Peach must reach in order to advance
+Each level has its layout defined in a data file, such as level01.txt or level02.txt. In every level
+except for the last level, there must be at least one flag that Peach must reach in order to advance
 to the next level. The last level must not contain a flag, but must contain Mario, who
-Peach must reach to win the game. For more details on the format of the level data files,
-please see the Level Data File section.
+Peach must reach to win the game. 
 
 Peach may move left or right, and may also jump. Because of the strange physics of the
 Mushroom Queendom, Peach can actually move left and right while jumping in the air as
