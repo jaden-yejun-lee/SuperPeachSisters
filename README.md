@@ -5,22 +5,6 @@ Sisters, beginning with level 1, and during each level except for the last
 Peach must reach a flag to continue to the next level. On the last level, Peach must reach
 (and thus save) Mario in order to win the entire game.
 
-The Super Peach Sisters screen is exactly 256 pixels wide by 256 pixels high. The
-bottom-leftmost pixel has coordinates x=0,y=0, while the upper-rightmost pixel has
-coordinate x=255,y=255, where x increases to the right and y increases upward toward
-the top of the screen. Every object in the game (e.g., Peach, koopas, stars, shells, etc.)
-will have an x coordinate in the range 0 to VIEW_WIDTH−1 inclusive, and a y coordinate
-in the range 0 to VIEW_HEIGHT−1 inclusive.
-
-Each level has its layout defined in a data file, such as level01.txt or level02.txt. In every level
-except for the last level, there must be at least one flag that Peach must reach in order to advance
-to the next level. The last level must not contain a flag, but must contain Mario, who
-Peach must reach to win the game. 
-
-Peach may move left or right, and may also jump. Because of the strange physics of the
-Mushroom Queendom, Peach can actually move left and right while jumping in the air as
-well, which makes it easier for her to jump from platform to platform.
-
 As Peach works through each level, she must avoid coming into contact with any of her
 enemies. Coming into contact with an enemy (unless she currently has a superpower due
 to picking up a goodie) will cause her to die, either resetting the level, or ending the game
